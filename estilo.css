@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  max-width: 100vw;
+  cursor: url(img/cursor.png), auto;
+  position: flex;
+  min-height: 100%;
+  background-color: rgb(253, 221, 226);
+}
+
+html {
+  height: 100%;
+}
+header {
+  background-image: url(img/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+h1 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+}
+
+.img-hongos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.img-amanita {
+  margin: 50px;
+  margin-bottom: -150px;
+  padding: 1em;
+  height: 400px;
+  width: 400px;
+  border: 5px solid rgb(214, 50, 32);
+  background-color: rgb(255, 197, 197);
+}
+
+.img-morchella {
+  margin: 50px;
+  margin-bottom: -150px;
+  padding: 1em;
+  height: 400px;
+  width: 400px;
+  border: 5px solid rgb(153, 97, 23);
+  background-color: rgb(254, 222, 173);
+}
+
+.img-lactarius {
+  margin: 50px;
+  margin-bottom: -150px;
+  padding: 1em;
+  height: 400px;
+  width: 400px;
+  border: 5px solid rgb(0, 170, 255);
+  background-color: rgb(191, 253, 253);
+}
+
+#link-amanita {
+  text-decoration: none;
+  color: antiquewhite;
+}
+#link-morchella {
+  text-decoration: none;
+  color: antiquewhite;
+}
+#link-lactarius {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.boton-caja-amanita {
+  background-color: rgb(214, 50, 32);
+  height: 50px;
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 250px;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  color: antiquewhite;
+  font-size: 40px;
+  font-family: "Delius Swash Caps", cursive;
+  transition: 0.3s ease;
+}
+
+.boton-caja-morchella {
+  background-color: rgb(153, 97, 23);
+  height: 50px;
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 100px;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  color: antiquewhite;
+  font-size: 40px;
+  font-family: "Delius Swash Caps", cursive;
+  transition: 0.3s ease;
+}
+
+.boton-caja-lactarius {
+  background-color: rgb(0, 170, 255);
+  height: 50px;
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 100px;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  color: antiquewhite;
+  font-size: 40px;
+  font-family: "Delius Swash Caps", cursive;
+  transition: 0.3s ease;
+}
+
+.boton-caja-amanita:hover {
+  box-shadow: 0 0.5rem 0.9rem rgba(0, 0, 0, 0.9);
+}
+.boton-caja-morchella:hover {
+  box-shadow: 0 0.5rem 0.9rem rgba(0, 0, 0, 0.9);
+}
+.boton-caja-lactarius:hover {
+  box-shadow: 0 0.5rem 0.9rem rgba(0, 0, 0, 0.9);
+}
+
+.amanita-texto {
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+  margin-top: 300px;
+  justify-content: center;
+}
+
+.amanita-texto2 {
+  text-align: justify-all;
+  width: 100em;
+  text-align: left;
+  font-family: "Kaisei Opti", serif;
+  margin: 100px;
+}
+
+.morchella-texto {
+  margin: 10px;
+  display: flex;
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 200px;
+  justify-content: center;
+}
+.morchella-texto2 {
+  text-align: justify-all;
+  width: 100em;
+  text-align: left;
+  font-family: "Kaisei Opti", serif;
+  margin: 100px;
+}
+
+.lactarius-texto {
+  text-align: justify-all;
+  margin: 10px;
+  display: flex;
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 200px;
+  justify-content: center;
+}
+.lactarius-texto2 {
+  text-align: justify-all;
+  width: 100em;
+  text-align: left;
+  font-family: "Kaisei Opti", serif;
+  margin: 100px;
+}
+
+#img-amanita2 {
+  height: 250px;
+  width: 250px;
+  float: right;
+  margin: 10px;
+  border: 5px solid rgb(249, 121, 121);
+  margin-top: 10px;
+}
+
+#img-amanita3 {
+  height: 320px;
+  width: 350px;
+  float: left;
+  margin: 20px;
+  margin-top: 30px;
+  border: 5px dashed rgb(249, 121, 121);
+}
+
+#img-amanita4 {
+  height: 315px;
+  width: 560px;
+  float: left;
+  margin: 5px;
+  border: 5px dashed rgb(249, 121, 121);
+  margin-left: 100px;
+  margin-top: 0;
+}
+
+#img-amanita5 {
+  height: 315px;
+  width: 560px;
+  float: right;
+  margin: 5px;
+  border: 5px dashed rgb(249, 121, 121);
+  margin-right: 100px;
+  margin-top: 0;
+}
+
+#img-morchella2 {
+  height: 250px;
+  width: 250px;
+  float: right;
+  margin: 20px;
+  border: 5px solid rgb(221, 168, 82);
+}
+
+#img-morchella3 {
+  height: 300px;
+  width: 300px;
+  float: left;
+  margin: 20px;
+  border: 5px dashed rgb(221, 168, 82);
+}
+
+#img-morchella4 {
+  height: 315px;
+  width: 560px;
+  float: left;
+  margin: 5px;
+  border: 5px dashed rgb(221, 168, 82);
+  margin-top: 0;
+  margin-left: 100px;
+}
+
+#img-morchella5 {
+  height: 315px;
+  width: 560px;
+  float: center;
+  margin: 5px;
+  border: 5px dashed rgb(221, 168, 82);
+  margin-top: 0;
+}
+#img-lactarius2 {
+  height: 250px;
+  width: 250px;
+  float: right;
+  margin: 10px;
+  border: 5px solid rgb(73, 149, 248);
+}
+
+#img-lactarius3 {
+  height: 350px;
+  width: 350px;
+  float: left;
+  margin: 20px;
+  margin-top: 30px;
+  border: 5px dashed rgb(73, 149, 248);
+}
+
+#img-lactarius4 {
+  height: 315px;
+  width: 560px;
+  float: right;
+  margin: 5px;
+  margin-top: 0px;
+  border: 5px dashed rgb(73, 149, 248);
+  margin-right: 100px;
+  margin-bottom: 200px;
+}
+
+#img-lactarius5 {
+  height: 315px;
+  width: 560px;
+  float: right;
+  margin: 5px;
+  margin-top: 0px;
+  border: 5px dashed rgb(73, 149, 248);
+}
+
+.amanita-caja {
+  text-align: left;
+  float: right;
+  height: 250px;
+  width: 250px;
+  margin: 100px;
+  margin-bottom: 200px;
+}
+
+.morchella-caja {
+  text-align: left;
+  float: right;
+  height: 250px;
+  width: 250px;
+  margin: 100px;
+  margin-bottom: 200px;
+}
+
+.lactarius-caja {
+  text-align: left;
+  float: right;
+  height: 250px;
+  width: 250px;
+  margin: 100px;
+  margin-bottom: 200px;
+}
+
+.amanita-descripcion {
+  font-family: "Port Lligat Slab", serif;
+  font-size: 20px;
+  border: 5px solid rgb(249, 121, 121);
+  background-color: rgb(252, 142, 171);
+  text-align: left;
+  float: center;
+  height: 45 00px;
+  width: 250px;
+  margin: -10px;
+  margin-top: 10px;
+}
+
+.morchella-descripcion {
+  font-family: "Port Lligat Slab", serif;
+  font-size: 20px;
+  border: 5px solid rgb(221, 168, 82);
+  background-color: rgb(250, 207, 147);
+  text-align: left;
+  float: center;
+  height: 400px;
+  width: 250px;
+  margin: -20px;
+  margin-top: 20px;
+}
+
+.lactarius-descripcion {
+  font-family: "Port Lligat Slab", serif;
+  font-size: 20px;
+  border: 5px solid rgb(73, 149, 248);
+  background-color: rgb(148, 231, 247);
+  text-align: left;
+  float: center;
+  height: 400px;
+  width: 250px;
+  margin: -10px;
+  margin-top: 10px;
+}
+
+#video-amanita {
+  text-align: center;
+  margin: 5px;
+  margin-top: 0px;
+}
+
+#video-morchella {
+  float: right;
+  margin: 5px;
+  margin-top: 0px;
+  margin-right: 100px;
+}
+
+#video-lactarius {
+  float: left;
+  margin: 5px;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+#strong-amanita {
+  color: rgb(166, 0, 0);
+  text-decoration: solid;
+}
+#strong-morchella {
+  color: rgb(88, 47, 16);
+}
+#strong-lactarius {
+  color: rgb(15, 115, 115);
+}
+
+#separador-izquierdo {
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 100px;
+}
+#separador-derecho {
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 100px;
+  float: right;
+}
+
+/* footer */
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(240, 127, 164);
+}
+
+.logo {
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.social-icon-container,
+.menu-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 2px solid rgb(119, 27, 144);
+  background-image: url(img/facebook.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+.social-icon:nth-last-of-type(2) {
+  background-image: url(img/instagram.png);
+}
+.social-icon:nth-last-of-type(3) {
+  background-image: url(img/twitter.png);
+}
+.social-icon:nth-last-of-type(4) {
+  background-image: url(img/tiktok.png);
+}
+
+.menu-item-container {
+  list-style-type: none;
+  color: blueviolet;
+  font-size: 18px;
+}
+
+.menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.copyright {
+  color: rgb(3, 0, 27);
+  opacity: 0.3;
+  text-align: center;
+}
+
+#container-loader p {
+  color: rgb(31, 215, 111);
+  font-family: "Pangolin", cursive;
+  font-size: 0.7cm;
+}
+
+.box-loading {
+  width: 200px;
+  height: 40px;
+  border: 3px solid #000;
+}
+
+.box-fondo {
+  height: 100%;
+  width: 100%;
+  animation: loading 5s;
+  background-color: rgba(51, 243, 51, 0.72);
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 200xp;
+  }
+}
+
+#container-loader {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  top: 0;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100000;
+  background-color: rgb(255, 255, 255);
+}
